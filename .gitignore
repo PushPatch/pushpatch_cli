@@ -1,0 +1,8 @@
+# Distribution repo — never commit built binaries or archives.
+# Release artifacts are uploaded to GitHub Releases, not tracked in git.
+*.tar.gz
+*.zip
+*.sha256
+pushpatch
+pushpatch.exe
+.DS_Store

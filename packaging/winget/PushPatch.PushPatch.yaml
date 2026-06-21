@@ -1,0 +1,27 @@
+# Winget manifest (singleton) for the PushPatch CLI.
+# For production, split into version / installer / locale manifests per the
+# winget-pkgs schema. The release workflow fills in the version + sha256.
+PackageIdentifier: PushPatch.PushPatch
+PackageVersion: 0.1.0
+PackageName: PushPatch CLI
+Publisher: PushPatch
+PackageUrl: https://pushpatch.in
+License: MIT
+ShortDescription: Self-hostable OTA update management CLI for Flutter apps
+Moniker: pushpatch
+Tags:
+  - flutter
+  - ota
+  - shorebird
+  - cli
+Installers:
+  - Architecture: x64
+    InstallerType: zip
+    InstallerUrl: https://github.com/pushpatch/pushpatch_cli/releases/download/v0.1.0/pushpatch-0.1.0-x86_64-pc-windows-msvc.zip
+    InstallerSha256: REPLACE_WITH_X86_64_WINDOWS_SHA256
+    NestedInstallerType: portable
+    NestedInstallerFiles:
+      - RelativeFilePath: pushpatch.exe
+        PortableCommandAlias: pushpatch
+ManifestType: singleton
+ManifestVersion: 1.6.0
