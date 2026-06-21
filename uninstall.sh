@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 # PushPatch CLI uninstaller (macOS / Linux).
 #
-#   curl -fsSL https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/uninstall.sh | sh
 #
 # Removes the binary, config/cache (~/.pushpatch), and the keychain credentials.
 # Set PUSHPATCH_KEEP_CONFIG=1 to keep ~/.pushpatch.

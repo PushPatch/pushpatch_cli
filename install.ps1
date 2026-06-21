@@ -2,7 +2,7 @@
 .SYNOPSIS
   PushPatch CLI installer for Windows.
 .EXAMPLE
-  irm https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/install.ps1 | iex
+  irm https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/install.ps1 | iex
 #>
 [CmdletBinding()]
 param(
@@ -12,7 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-if (-not $Repo)    { $Repo = "pushpatch/pushpatch_cli" }
+if (-not $Repo)    { $Repo = "PushPatch/pushpatch_cli" }
 if (-not $Version) { $Version = "latest" }
 if (-not $BinDir)  { $BinDir = Join-Path $env:LOCALAPPDATA "PushPatch\bin" }
 

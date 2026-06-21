@@ -2,7 +2,7 @@
 .SYNOPSIS
   PushPatch CLI uninstaller for Windows.
 .EXAMPLE
-  irm https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.ps1 | iex
+  irm https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/uninstall.ps1 | iex
 .DESCRIPTION
   Removes the binary, config/cache (~/.pushpatch), and PATH entry.
   Pass -KeepConfig to keep ~/.pushpatch.

@@ -1,15 +1,15 @@
 #!/usr/bin/env sh
 # PushPatch CLI installer (macOS / Linux).
 #
-#   curl -fsSL https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/install.sh | sh
 #
 # Environment overrides:
-#   PUSHPATCH_REPO     GitHub repo (default: pushpatch/pushpatch_cli)
+#   PUSHPATCH_REPO     GitHub repo (default: PushPatch/pushpatch_cli)
 #   PUSHPATCH_VERSION  Tag to install (default: latest)
 #   PUSHPATCH_BIN_DIR  Install dir (default: /usr/local/bin or ~/.pushpatch/bin)
 set -eu
 
-REPO="${PUSHPATCH_REPO:-pushpatch/pushpatch_cli}"
+REPO="${PUSHPATCH_REPO:-PushPatch/pushpatch_cli}"
 VERSION="${PUSHPATCH_VERSION:-latest}"
 
 say()  { printf '\033[36m→\033[0m %s\n' "$1"; }

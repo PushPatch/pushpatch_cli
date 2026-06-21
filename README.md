@@ -11,14 +11,14 @@ patches, staged rollouts, channels and rollback.
 
 ```bash
 # macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/install.sh | sh
 
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/install.ps1 | iex
 ```
 
 The script detects your OS/architecture, downloads the matching archive from the
-[Releases](https://github.com/pushpatch/pushpatch_cli/releases), verifies its
+[Releases](https://github.com/PushPatch/pushpatch_cli/releases), verifies its
 SHA-256, and installs the `pushpatch` binary.
 
 ### Package managers
@@ -37,7 +37,7 @@ winget install PushPatch.PushPatch
 ### Manual download
 
 Grab the archive for your platform from the
-[latest release](https://github.com/pushpatch/pushpatch_cli/releases/latest):
+[latest release](https://github.com/PushPatch/pushpatch_cli/releases/latest):
 
 | Platform | Asset |
 |----------|-------|
@@ -73,10 +73,10 @@ Run `pushpatch <command> --help` for full options. Keep the CLI up to date with
 
 ```bash
 # macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.sh | sh
+curl -fsSL https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/uninstall.sh | sh
 
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.ps1 | iex
+irm https://raw.githubusercontent.com/PushPatch/pushpatch_cli/main/uninstall.ps1 | iex
 ```
 
 This removes the `pushpatch` binary, clears stored credentials, and deletes the
