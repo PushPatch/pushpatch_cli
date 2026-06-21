@@ -69,6 +69,28 @@ pushpatch status
 Run `pushpatch <command> --help` for full options. Keep the CLI up to date with
 `pushpatch upgrade`.
 
+## Uninstall
+
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.sh | sh
+
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/pushpatch/pushpatch_cli/main/uninstall.ps1 | iex
+```
+
+This removes the `pushpatch` binary, clears stored credentials, and deletes the
+`~/.pushpatch` config/cache directory. To keep your config, set
+`PUSHPATCH_KEEP_CONFIG=1` (shell) or pass `-KeepConfig` (PowerShell).
+
+If you installed via a package manager, uninstall there instead:
+
+```bash
+brew uninstall pushpatch                  # Homebrew
+choco uninstall pushpatch                 # Chocolatey
+winget uninstall PushPatch.PushPatch      # Winget
+```
+
 ## Verifying a download
 
 Binaries are stripped and hardened. To confirm integrity, compare the published
