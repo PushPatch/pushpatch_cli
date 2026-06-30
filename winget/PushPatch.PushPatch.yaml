@@ -2,7 +2,7 @@
 # For production, split into version / installer / locale manifests per the
 # winget-pkgs schema. The release workflow fills in the version + sha256.
 PackageIdentifier: PushPatch.PushPatch
-PackageVersion: 0.1.0
+PackageVersion: 0.1.1
 PackageName: PushPatch CLI
 Publisher: PushPatch
 PackageUrl: https://pushpatch.in
@@ -17,7 +17,7 @@ Tags:
 Installers:
   - Architecture: x64
     InstallerType: zip
-    InstallerUrl: https://github.com/PushPatch/pushpatch_cli/releases/download/v0.1.0/pushpatch-0.1.0-x86_64-pc-windows-msvc.zip
+    InstallerUrl: https://github.com/PushPatch/pushpatch_cli/releases/download/v0.1.1/pushpatch-0.1.1-x86_64-pc-windows-msvc.zip
     InstallerSha256: 93b9babaad4345a0bc5dc2a3ae0113f6cf0061c7fa39af4e7b084420aeb9acb9
     NestedInstallerType: portable
     NestedInstallerFiles:
